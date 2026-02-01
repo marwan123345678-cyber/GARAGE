@@ -3,179 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'Atelier Sublime | Coiffeur Créateur Paris</title>
+    <title>Vroom Expertise | Garage Automobile Paris</title>
     <style>
-        /* Styles de base */
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
+        header { background: #1a1a1a; color: #e67e22; padding: 2rem; text-align: center; border-bottom: 4px solid #e67e22; }
+        nav { background: #222; padding: 10px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; text-transform: uppercase; }
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover; background-position: center; height: 400px; display: flex; align-items: center; justify-content: center; color: white; text-align: center;
         }
-
-        /* En-tête */
-        header {
-            background-color: #1a1a1a;
-            color: #d4af37; /* Couleur dorée */
-            padding: 2rem 1rem;
-            text-align: center;
-            border-bottom: 3px solid #d4af37;
-        }
-
-        nav {
-            background: #222;
-            padding: 10px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-        }
-
-        /* Section Hero */
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        /* Services */
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 50px 20px;
-            gap: 20px;
-        }
-
-        .service-card {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            width: 280px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .service-card h3 {
-            color: #1a1a1a;
-            border-bottom: 2px solid #d4af37;
-            padding-bottom: 10px;
-        }
-
-        /* Bouton Action */
-        .btn-rdv {
-            display: inline-block;
-            background-color: #d4af37;
-            color: #1a1a1a;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-
-        /* Pied de page */
-        footer {
-            background-color: #1a1a1a;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        footer a {
-            color: #d4af37;
-            text-decoration: none;
-        }
+        .btn-rdv { display: inline-block; background: #e67e22; color: white; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 20px; }
+        .services { display: flex; flex-wrap: wrap; justify-content: center; padding: 50px 20px; gap: 20px; background: #f4f4f4; }
+        .service-card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 250px; text-align: center; }
+        .service-card h3 { color: #1a1a1a; margin-bottom: 10px; }
+        footer { background: #1a1a1a; color: white; padding: 40px 20px; text-align: center; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto; }
+        footer a { color: #e67e22; text-decoration: none; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>L'ATELIER SUBLIME</h1>
-        <p>L'art de la coiffure haute couture</p>
+        <h1>VROOM EXPERTISE</h1>
+        <p>Entretien et Réparation Toutes Marques</p>
     </header>
 
     <nav>
         <a href="#accueil">Accueil</a>
-        <a href="#services">Services</a>
+        <a href="#services">Nos Services</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <section class="hero" id="accueil">
         <div>
-            <h2>Révélez votre beauté</h2>
-            <p>Une expérience unique entre les mains de nos experts</p>
-            <a href="tel:+33142611020" class="btn-rdv">PRENDRE RENDEZ-VOUS</a>
+            <h2>Votre sécurité est notre priorité</h2>
+            <p>Mécanique générale, diagnostic électronique et carrosserie</p>
+            <a href="tel:+33145789210" class="btn-rdv">APPELER LE GARAGE</a>
         </div>
     </section>
 
     <section class="services" id="services">
         <div class="service-card">
-            <h3>Coupe & Style</h3>
-            <p>Des coupes tendances adaptées à la forme de votre visage.</p>
+            <h3>🔧 Entretien</h3>
+            <p>Vidange, filtres, et révision complète constructeur.</p>
         </div>
         <div class="service-card">
-            <h3>Coloration</h3>
-            <p>Balayage, ombré hair et colorations végétales haut de gamme.</p>
+            <h3>⚙️ Mécanique</h3>
+            <p>Embrayage, courroie de distribution et freinage.</p>
         </div>
         <div class="service-card">
-            <h3>Soin Profond</h3>
-            <p>Rituel à la kératine pour redonner brillance et vitalité.</p>
+            <h3>💻 Diagnostic</h3>
+            <p>Lecture de codes défauts et recherche de pannes électriques.</p>
         </div>
     </section>
 
     <footer id="contact">
         <div class="footer-grid">
             <div>
-                <h3>NOUS TROUVER</h3>
-                <p>📍 22 Rue de Rivoli<br>75001 Paris, France</p>
+                <h3>ADRESSE</h3>
+                <p>📍 15 Rue de la Paix<br>75002 Paris, France</p>
             </div>
             <div>
                 <h3>CONTACT</h3>
-                <p>📞 <a href="tel:+33142611020">01 42 61 10 20</a></p>
-                <p>📧 <a href="mailto:contact@l-ateliersublime.fr">contact@l-ateliersublime.fr</a></p>
+                <p>📞 <a href="tel:+33145789210">01 45 78 92 10</a></p>
+                <p>📧 <a href="mailto:contact@vroom-expertise.fr">contact@vroom-expertise.fr</a></p>
             </div>
             <div>
                 <h3>HORAIRES</h3>
-                <p>Mar - Ven : 09h00 - 19h00<br>Samedi : 09h00 - 18h00</p>
+                <p>Lun - Ven : 08h00 - 19h00<br>Samedi : 09h00 - 12h00</p>
             </div>
         </div>
-        <p style="margin-top: 40px; font-size: 0.8rem; color: #666;">&copy; 2026 L'Atelier Sublime. Tous droits réservés.</p>
     </footer>
 
 </body>
