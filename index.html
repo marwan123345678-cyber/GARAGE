@@ -3,78 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vroom Expertise | Garage Automobile Paris</title>
+    <title>Vroom Expertise | Garage Automobile Professionnel</title>
     <style>
-        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
-        header { background: #1a1a1a; color: #e67e22; padding: 2rem; text-align: center; border-bottom: 4px solid #e67e22; }
-        nav { background: #222; padding: 10px; text-align: center; position: sticky; top: 0; z-index: 1000; }
-        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; text-transform: uppercase; }
+        :root { --primary: #e67e22; --dark: #1a1a1a; --light: #f4f4f4; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; line-height: 1.6; color: #333; }
+        header { background: var(--dark); color: var(--primary); padding: 40px 20px; text-align: center; border-bottom: 5px solid var(--primary); }
+        nav { background: #222; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; font-size: 0.9rem; }
         .hero { 
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-            background-size: cover; background-position: center; height: 400px; display: flex; align-items: center; justify-content: center; color: white; text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover; background-position: center; height: 450px; display: flex; align-items: center; justify-content: center; color: white; text-align: center;
         }
-        .btn-rdv { display: inline-block; background: #e67e22; color: white; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 20px; }
-        .services { display: flex; flex-wrap: wrap; justify-content: center; padding: 50px 20px; gap: 20px; background: #f4f4f4; }
-        .service-card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 250px; text-align: center; }
-        .service-card h3 { color: #1a1a1a; margin-bottom: 10px; }
-        footer { background: #1a1a1a; color: white; padding: 40px 20px; text-align: center; }
-        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 1000px; margin: 0 auto; }
-        footer a { color: #e67e22; text-decoration: none; }
+        .cta-button { background: var(--primary); color: white; padding: 18px 35px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+        .cta-button:hover { background: #d35400; transform: scale(1.05); }
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 60px 10%; background: var(--light); }
+        .card { background: white; padding: 40px; border-radius: 10px; text-align: center; shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        footer { background: var(--dark); color: white; padding: 60px 20px; text-align: center; }
+        .grid-footer { display: flex; justify-content: space-around; flex-wrap: wrap; max-width: 1100px; margin: 0 auto; }
+        .grid-footer div { margin: 20px; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>VROOM EXPERTISE</h1>
-        <p>Entretien et Réparation Toutes Marques</p>
-    </header>
+<header>
+    <h1>VROOM EXPERTISE</h1>
+    <p>VOTRE PARTENAIRE AUTOMOBILE DE CONFIANCE À PARIS</p>
+</header>
 
-    <nav>
-        <a href="#accueil">Accueil</a>
-        <a href="#services">Nos Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<nav>
+    <a href="#accueil">ACCUEIL</a>
+    <a href="#services">SERVICES</a>
+    <a href="#avis">AVIS CLIENTS</a>
+    <a href="#contact">CONTACT</a>
+</nav>
 
-    <section class="hero" id="accueil">
+<section class="hero" id="accueil">
+    <div>
+        <h2 style="font-size: 2.5rem;">MÉCANIQUE DE PRÉCISION</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 30px;">Entretien, Réparation & Diagnostic Électronique</p>
+        <a href="tel:+33145789210" class="cta-button">PRENDRE RENDEZ-VOUS : 01 45 78 92 10</a>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <div class="card">
+        <h3 style="color: var(--primary);">🛠 ENTRETIEN</h3>
+        <p>Vidange, freinage, pneus et révision constructeur avec garantie préservée.</p>
+    </div>
+    <div class="card">
+        <h3 style="color: var(--primary);">⚙️ MÉCANIQUE</h3>
+        <p>Expertise complète : Embrayage, boîte de vitesse, moteur et distribution.</p>
+    </div>
+    <div class="card">
+        <h3 style="color: var(--primary);">💻 DIAGNOSTIC</h3>
+        <p>Équipements de pointe pour détecter les pannes électroniques complexes.</p>
+    </div>
+</section>
+
+<footer id="contact">
+    <div class="grid-footer">
         <div>
-            <h2>Votre sécurité est notre priorité</h2>
-            <p>Mécanique générale, diagnostic électronique et carrosserie</p>
-            <a href="tel:+33145789210" class="btn-rdv">APPELER LE GARAGE</a>
+            <h4>ADRESSE</h4>
+            <p>15 Rue de la Paix<br>75002 Paris</p>
         </div>
-    </section>
-
-    <section class="services" id="services">
-        <div class="service-card">
-            <h3>🔧 Entretien</h3>
-            <p>Vidange, filtres, et révision complète constructeur.</p>
+        <div>
+            <h4>CONTACT</h4>
+            <p>01 45 78 92 10<br>contact@vroom-expertise.fr</p>
         </div>
-        <div class="service-card">
-            <h3>⚙️ Mécanique</h3>
-            <p>Embrayage, courroie de distribution et freinage.</p>
+        <div>
+            <h4>HORAIRES</h4>
+            <p>Lun - Ven : 08:00 - 19:00<br>Samedi : 09:00 - 12:00</p>
         </div>
-        <div class="service-card">
-            <h3>💻 Diagnostic</h3>
-            <p>Lecture de codes défauts et recherche de pannes électriques.</p>
-        </div>
-    </section>
-
-    <footer id="contact">
-        <div class="footer-grid">
-            <div>
-                <h3>ADRESSE</h3>
-                <p>📍 15 Rue de la Paix<br>75002 Paris, France</p>
-            </div>
-            <div>
-                <h3>CONTACT</h3>
-                <p>📞 <a href="tel:+33145789210">01 45 78 92 10</a></p>
-                <p>📧 <a href="mailto:contact@vroom-expertise.fr">contact@vroom-expertise.fr</a></p>
-            </div>
-            <div>
-                <h3>HORAIRES</h3>
-                <p>Lun - Ven : 08h00 - 19h00<br>Samedi : 09h00 - 12h00</p>
-            </div>
-        </div>
-    </footer>
+    </div>
+</footer>
 
 </body>
 </html>
